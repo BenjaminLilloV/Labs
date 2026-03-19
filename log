@@ -72,3 +72,13 @@ Thu Mar 19 07:46:45 PM UTC 2026:
  tests:  1|4
 total_score: 10/70
 8f2a0e9
+Thu Mar 19 07:51:01 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:49:7: error: implicit declaration of function ‘insert_back’ [-Wimplicit-function-declaration]
+   49 |       insert_back(L, nuevoElemento);
+      |       ^~~~~~~~~~~
+4a05f94
