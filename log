@@ -50,3 +50,13 @@ exercises.c:48:20: error: assignment to ‘int *’ from ‘int’ makes pointer
       |                    ^
 cc1: all warnings being treated as errors
 d17abe4
+Thu Mar 19 07:44:33 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:48:20: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   48 |       nuevoElemento=i;
+      |                    ^
+45c1148
