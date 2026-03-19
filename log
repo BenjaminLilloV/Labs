@@ -1,0 +1,18 @@
+Thu Mar 19 07:31:54 PM UTC 2026: 
+ exercises.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:56:18: error: implicit declaration of function ‘firt’; did you mean ‘first’? [-Wimplicit-function-declaration]
+   56 |    int primero = firt(L);
+      |                  ^~~~
+      |                  first
+exercises.c:57:18: error: comparison between pointer and integer [-Werror]
+   57 |    while(primero != NULL){
+      |                  ^~
+exercises.c:59:15: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+   59 |       primero = next(L);
+      |               ^
+cc1: all warnings being treated as errors
+604c124
