@@ -60,3 +60,9 @@ exercises.c:48:20: error: assignment to ‘int *’ from ‘int’ makes pointer
    48 |       nuevoElemento=i;
       |                    ^
 45c1148
+Thu Mar 19 07:45:00 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|4
+total_score: 10/70
+dfdfbf2
