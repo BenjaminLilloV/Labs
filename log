@@ -32,3 +32,21 @@ Thu Mar 19 07:34:44 PM UTC 2026:
  tests:  1|4
 total_score: 10/70
 b40b556
+Thu Mar 19 07:44:13 PM UTC 2026: 
+ exercises.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:46:26: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+   46 |    for (int i = 1; i < 10, i++){
+      |                          ^
+exercises.c:46:31: error: expected ‘;’ before ‘)’ token
+   46 |    for (int i = 1; i < 10, i++){
+      |                               ^
+      |                               ;
+exercises.c:48:20: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   48 |       nuevoElemento=i;
+      |                    ^
+cc1: all warnings being treated as errors
+d17abe4
