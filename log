@@ -82,3 +82,9 @@ exercises.c:49:7: error: implicit declaration of function ‘insert_back’ [-Wi
    49 |       insert_back(L, nuevoElemento);
       |       ^~~~~~~~~~~
 4a05f94
+Thu Mar 19 07:51:36 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|4
+total_score: 10/70
+746d395
