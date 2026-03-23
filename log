@@ -112,3 +112,9 @@ exercises.c:81:11: error: ‘primerElemeto’ undeclared (first use in this func
       |           primerElemento
 exercises.c:81:11: note: each undeclared identifier is reported only once for each function it appears in
 59a4f1a
+Mon Mar 23 01:11:48 AM UTC 2026: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ tests:  3|2
+total_score: 40/70
+21c1828
