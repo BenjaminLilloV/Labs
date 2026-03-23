@@ -133,3 +133,66 @@ exercises.c:105:14: error: assignment to ‘int’ from ‘void *’ makes integ
   105 |    *elemento = top(auxiliar);
       |              ^
 a4e0c5e
+Mon Mar 23 01:29:27 AM UTC 2026: 
+ exercises.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:100:19: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+  100 |    int elemento = top(P1);
+      |                   ^~~
+exercises.c:101:19: error: comparison between pointer and integer [-Werror]
+  101 |    while(elemento != NULL){
+      |                   ^~
+exercises.c:102:22: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Wint-conversion]
+  102 |       push(auxiliar, elemento);
+      |                      ^~~~~~~~
+      |                      |
+      |                      int
+In file included from exercises.c:7:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:104:16: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+  104 |       elemento = top(P1)
+      |                ^
+exercises.c:104:25: error: expected ‘;’ before ‘}’ token
+  104 |       elemento = top(P1)
+      |                         ^
+      |                         ;
+  105 |    }
+      |    ~                     
+exercises.c:106:4: error: invalid type argument of unary ‘*’ (have ‘int’)
+  106 |    *elemento = top(auxiliar);
+      |    ^~~~~~~~~
+exercises.c:107:19: error: comparison between pointer and integer [-Werror]
+  107 |    while(elemento != NULL){
+      |                   ^~
+exercises.c:108:16: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Wint-conversion]
+  108 |       push(P2, elemento);
+      |                ^~~~~~~~
+      |                |
+      |                int
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:109:15: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Wint-conversion]
+  109 |       push(P1,elemento);
+      |               ^~~~~~~~
+      |               |
+      |               int
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:111:15: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+  111 |       elemento= top(auxiliar)
+      |               ^
+exercises.c:111:30: error: expected ‘;’ before ‘}’ token
+  111 |       elemento= top(auxiliar)
+      |                              ^
+      |                              ;
+  112 |    }
+      |    ~                          
+cc1: all warnings being treated as errors
+efea784
