@@ -123,7 +123,7 @@ int parentesisBalanceados(char *cadena) {
    Stack *pila = create_stack();
    char primero = cadena[0];\
    char ultimo = cadena[strlen(cadena)-1];
-   if (primero = '(' || ultimo = ')'){
+   if (primero != ultimo){
       return 0;
    }
 

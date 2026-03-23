@@ -456,3 +456,9 @@ exercises.c:124:9: error: variable ‘primero’ set but not used [-Werror=unuse
       |         ^~~~~~~
 cc1: all warnings being treated as errors
 fdec47c
+Mon Mar 23 01:57:12 AM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|1
+total_score: 50/70
+4b2f572
