@@ -442,3 +442,17 @@ Mon Mar 23 01:55:35 AM UTC 2026:
  tests:  6|1
 total_score: 60/70
 3d58436
+Mon Mar 23 01:56:37 AM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:126:32: error: lvalue required as left operand of assignment
+  126 |    if (primero = '(' || ultimo = ')'){
+      |                                ^
+exercises.c:124:9: error: variable ‘primero’ set but not used [-Werror=unused-but-set-variable]
+  124 |    char primero = cadena[0];\
+      |         ^~~~~~~
+cc1: all warnings being treated as errors
+fdec47c
