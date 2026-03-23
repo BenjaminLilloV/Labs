@@ -100,3 +100,15 @@ Thu Mar 19 07:55:41 PM UTC 2026:
  tests:  2|3
 total_score: 20/70
 e00e86b
+Mon Mar 23 01:07:29 AM UTC 2026: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:81:11: error: ‘primerElemeto’ undeclared (first use in this function); did you mean ‘primerElemento’?
+   81 |    while (primerElemeto != NULL){
+      |           ^~~~~~~~~~~~~
+      |           primerElemento
+exercises.c:81:11: note: each undeclared identifier is reported only once for each function it appears in
+59a4f1a
